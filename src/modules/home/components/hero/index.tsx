@@ -2,7 +2,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick-theme.css'
 
 const images = [
   'https://d2d3ehxuorb8xr.cloudfront.net/2296x650_DESKTOP_TOYS_EN_1_b297cde9b8.jpg',
