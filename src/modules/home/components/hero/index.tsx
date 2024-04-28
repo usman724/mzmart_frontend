@@ -23,22 +23,22 @@ const Hero = () => {
     arrows: true,
   };
 
-  const SliderComponent = Slider as any as React.ComponentType<any>;
+  const AnySlider = Slider as any;
 
 
   return (
     <>
 
       <div className="m-2 ml-3 mr-3">
-      <SliderComponent {...settings}>
+      <AnySlider {...settings}>
       {images.map((image, index) => (
-        <div key={index}>
+        <div key={index} style={{ backgroundImage: `url(${image})` }}>
           <div className="h-56 sm:h-64 md:h-72 lg:h-80 xl:h-96 w-full border-b border-ui-border-base bg-ui-bg-subtle"
-            style={{ backgroundImage: `url(${image})`, backgroundSize: '100% 100%', backgroundPosition: 'top', backgroundRepeat: 'no-repeat' }}>
+            style={{ backgroundSize: '100% 100%', backgroundPosition: 'top', backgroundRepeat: 'no-repeat' }}>
           </div>
         </div>
       ))}
-    </SliderComponent>
+    </AnySlider>
           </div>
     </>
 
